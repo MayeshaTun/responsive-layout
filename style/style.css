@@ -1,0 +1,60 @@
+*{
+   margin: 10px 0; 
+   padding: 0;
+   box-sizing: border-box;
+   background-color: white;
+}
+.section {
+    display:flex;
+    grid-template-rows: repeat(1,1fr);
+    align-items: center;
+    width: 80%;
+    margin:auto;
+    gap:5px ;
+
+}
+.section img{
+    flex: 0 50%;
+    max-width:30%;
+    height: auto;
+}
+.section .content{
+    padding:20px ;
+}
+section .content h2{
+    font-size: 25px;
+    margin: 15px 0;
+}
+.section .content p{
+    color: dimgrey;
+    width: 80%;
+    font-size: 15px;
+    line-height: 1.5;
+    margin: 15px 0;
+}
+.read{
+    display: inline-block;
+    background-color: rgb(42, 42, 214);
+    border: none;
+    padding: 5px 15px;
+    border-radius: 3px;
+    font-weight: 400;
+}
+@media screen and (max-width:576px){
+     
+    .section{
+       flex-direction: column;
+    }
+    .section img{
+        flex: 0 100%;
+        max-width: 100%;
+    }
+    .section p{
+    max-width:60%;
+    }
+    .section .content{
+        flex: 0 100%;
+        max-width: 100%;
+        padding: 15px;
+    }
+}
